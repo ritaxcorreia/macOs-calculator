@@ -1,2 +1,70 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Calculator</title><link rel="stylesheet" href="calculator.css"></head><body><div class="wrapper"><section class="screen">0 </section><section class="calc-buttons"><div class="calc-button-row"></div><button class="calc-button">7</button><button class="calc-button">8</button><button class="calc-button">9</button><button class="calc-button">&times;
-</button><div class="calc-button-row"></div><div class="calc-button-row"></div><div class="calc-button-row"></div><div class="calc-button-row"></div></section></div></body></html>
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 350px;
+    border: 2px solid #393939;
+    border-radius: 5px;
+    background-color: #393939;
+    color: white;
+}
+
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+
+.screen {
+    background-color: #252524;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+
+.calc-button {
+    background-color: #535453;
+    color: white;
+    border: none;
+    font-size: 30px;
+    height: 80px;
+    flex-basis: 24.5%;
+}
+
+.calc-button:hover {
+    background-color: #393939;
+}
+
+.calc-button:active {
+    background-color: #393939;
+}
+
+.double {
+    flex-basis: 49.7%;
+}
+
+.triple {
+    flex-basis: 74.8%;
+}
+
+.column {
+    background-color: #FF9E0B;
+}
+
+.column:hover {
+    background-color: #b26f0a;
+}
