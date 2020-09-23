@@ -13,6 +13,7 @@ function buttonClick(value) {
     screen.innerText = buffer;
 }
 
+
 function handleSymbol(symbol) {
     switch (symbol) {
         case 'C':
